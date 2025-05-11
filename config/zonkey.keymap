@@ -200,7 +200,7 @@
         layer_1 {
             bindings = <
 &kp ESCAPE    &trans    &trans      &trans            &trans                         &trans         &trans    &kp UP_ARROW  &trans     &trans
-&toJIS 5 TAB  &trans    &kp DELETE  &trans            &trans       &trans    &trans  &kp BACKSPACE  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&toJIS 5 TAB  &trans    &kp DELETE  &trans            &kp TAB      &trans    &trans  &kp BACKSPACE  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
 &trans        &kp CAPS  &trans      &trans            &trans       &trans    &trans  &trans         &trans    &trans        &trans     &trans
 &trans        &trans    &trans      &lt 5 INT_HENKAN  &lt 5 SPACE  &mo 6             &trans         &trans                                     &trans
             >;
@@ -210,10 +210,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR        &kp PERCENT                                 &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp TILDE
-&trans           &trans             &kp CARET  &kp AMPERSAND     &kp ASTERISK  &trans                &trans  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON
-&kp LEFT_SHIFT   &trans             &trans     &trans            &trans        &trans                &trans  &kp EQUAL  &trans                &kp COMMA              &kp PERIOD     &kp SLASH
-&trans           &trans             &trans     &lt 6 INT_HENKAN  &lt 1 SPACE   &lt 5 INT_MUHENKAN            &trans     &trans                                                                 &kp UNDERSCORE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR        &kp PERCENT                                 &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS      &kp TILDE
+&trans           &trans             &kp CARET  &kp AMPERSAND     &kp ASTERISK  &trans                &trans  &kp PLUS        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp COLON
+&kp LEFT_SHIFT   &trans             &trans     &trans            &trans        &trans                &trans  &kp EQUAL       &trans                &kp COMMA              &kp PERIOD     &kp SLASH
+&trans           &trans             &trans     &lt 6 INT_HENKAN  &lt 1 SPACE   &lt 5 INT_MUHENKAN            &kp LEFT_SHIFT  &trans                                                                 &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -254,10 +254,10 @@
 
         MOUSE {
             bindings = <
-&trans              &kp LC(MINUS)   &kp LG(UP_ARROW)  &kp LC(PLUS)     &trans                           &trans  &trans    &trans    &trans    &trans
-&kp LG(LEFT_ARROW)  &msc SCRL_LEFT  &kp LG(D)         &msc SCRL_RIGHT  &kp LG(RIGHT)  &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans              &trans          &trans            &trans           &trans         &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans              &trans          &trans            &trans           &kp SPACE      &trans            &trans  &trans                                &trans
+&trans              &kp LC(MINUS)   &kp LG(UP_ARROW)  &kp LC(PLUS)     &trans                           &trans     &trans    &trans    &trans    &trans
+&kp LG(LEFT_ARROW)  &msc SCRL_LEFT  &kp LG(D)         &msc SCRL_RIGHT  &kp LG(RIGHT)  &trans    &trans  &trans     &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans              &trans          &trans            &trans           &trans         &trans    &trans  &trans     &trans    &trans    &trans    &trans
+&trans              &trans          &trans            &trans           &kp SPACE      &trans            &kp SPACE  &trans                                &trans
             >;
 
             sensor-bindings = <&scroll_down_up>;
