@@ -11,6 +11,11 @@
             ;
 };
 
+/ {
+    trackball_listener {
+        status = "disabled"; 
+};
+
 &left_encoder {
     status = "okay";
 };
