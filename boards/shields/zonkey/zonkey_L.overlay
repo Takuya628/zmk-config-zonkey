@@ -1,5 +1,11 @@
 #include "zonkey.dtsi"
 
+/ {
+    trackball_listener {
+        status = "disabled"; 
+ };
+};
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -11,10 +17,6 @@
             ;
 };
 
-/ {
-    trackball_listener {
-        status = "disabled"; 
-};
 
 &left_encoder {
     status = "okay";
